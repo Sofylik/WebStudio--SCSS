@@ -1,0 +1,40 @@
+.activity {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .activity {
+        display: block;
+        padding-bottom: 94px;
+    }
+    .activity__title {
+        @include section_title();
+    }
+    .activity__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .activity__img {
+        width: 370px;
+        height: 294px;
+    }
+    .activity__item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .activity__text {
+        position: absolute;
+        text-transform: uppercase;
+        color: $primaryBgColor;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        bottom: 0px;
+        left: 0px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        width: 100%;
+        background-color: rgba(47, 48, 58, 0.80);
+    }
+}

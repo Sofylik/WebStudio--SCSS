@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="WebStudio portfolio">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"    rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__menu-wrap">
+            <a href="index.html" class="header__menu-logo"><span class="header__logo__blue">Web</span>Studio</a>
+            <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header__burger-icon" width="40" height="40">
+            <use href="img/symbol-defs-menu.svg#icon-menu"></use>
+          </svg>
+        </button>
+        </div>
+        <div class="header__wrapper container">
+            <a href="index.html" class="header__logo"><span class="header__logo__blue">Web</span>Studio</a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="index.html">Студія</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link nav__link--active" href="portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <ul class="contacts-list">
+                <li class="contacts-list__item">
+                    <a class="contacts-list__info contacts-list__info--email" href="mailto:info@devstudio.com">
+                        <svg class="contacts-list__icon" width="16" height="12">
+                            <use href="img/symbol-defs.svg#icon-mail"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="contacts-list__item">
+                    <a class="contacts-list__info" href="tel:+380961111111">
+                        <svg class="contacts-list__icon" width="10" height="16" >
+                            <use href="img/symbol-defs.svg#icon-phone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <div class="buttons__section">
+            <div class="container">
+                <ul class="buttons__list">
+                    <li class="buttons__wrapper">
+                        <button class="buttons__item buttons__item--active">Усі</button>
+                    </li>
+                    <li class="buttons__wrapper">
+                        <button class="buttons__item">Веб-сайти</button>
+                    </li>
+                    <li class="buttons__wrapper">
+                        <button class="buttons__item">Додатки</button>
+                    </li>
+                    <li class="buttons__wrapper">
+                        <button class="buttons__item">Дизайн</button>
+                    </li>
+                    <li class="buttons__wrapper">
+                        <button class="buttons__item">Маркетинг</button>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="card__section">
+            <div class="container">
+                <ul class="card__list">
+                    <li class="card__item">
+                        <a href="#">
+                            <div class="card__wrap">
+                                <picture>
+                                    <source srcset="img/portfolio/laptopfirst-mobile@1x.webp 1x, img/portfolio/laptopfirst-mobile@2x.webp 2x" media="(max-width: 699px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/laptopfirst-tablet@1x.webp 1x, img/portfolio/laptopfirst-tablet@2x.webp 2x" media="(min-width: 700px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/laptopfirst-desktop@1x.webp 1x, img/portfolio/laptopfirst-desktop@2x.webp 2x" media="(min-width: 1143px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/laptopfirst-mobile@1x.jpg 1x, img/portfolio/laptopfirst-mobile@2x.jpg 2x" media="(max-width: 699px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/laptopfirst-tablet@1x.jpg 1x, img/portfolio/laptopfirst-tablet@2x.jpg 2x" media="(min-width: 700px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/laptopfirst-desktop@1x.jpg 1x, img/portfolio/laptopfirst-desktop@2x.jpg 2x" media="(min-width: 1143px)" type="image/jpg"/>
+                                    <img class="card__img" src="img/portfolio/laptopfirst-desktop@1x.jpg" alt="laptop" />
+                                </picture>
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                            </div>
+                            <h2 class="card__title">Технокряк</h2>
+                            <button class="card__text">Веб-сайт</button>
+                        </a>
+                    </li>
+                    <li class="card__item">
+                        <a href="#">
+                            <div class="card__wrap">
+                                <picture>
+                                    <source srcset="img/portfolio/basketball-mobile@1x.webp 1x, img/portfolio/basketball-mobile@2x.webp 2x" media="(max-width: 699px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/basketball-tablet@1x.webp 1x, img/portfolio/basketball-tablet@2x.webp 2x" media="(min-width: 700px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/basketball-desktop@1x.webp 1x, img/portfolio/basketball-desktop@2x.webp 2x" media="(min-width: 1143px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/basketball-mobile@1x.jpg 1x, img/portfolio/basketball-mobile@2x.jpg 2x" media="(max-width: 699px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/basketball-tablet@1x.jpg 1x, img/portfolio/basketball-tablet@2x.jpg 2x" media="(min-width: 700px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/basketball-desktop@1x.jpg 1x, img/portfolio/basketball-desktop@2x.jpg 2x" media="(min-width: 1143px)" type="image/jpg"/>
+                                    <img class="card__img" src="img/portfolio/basketball-desktop@1x.jpg" alt="basketball" />
+                                </picture>
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                            </div>
+                            <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
+                            <button class="card__text">Дизайн</button>
+                        </a>
+                    </li>
+                    <li class="card__item">
+                        <a href="#">
+                            <div class="card__wrap">
+                                <picture>
+                                    <source srcset="img/portfolio/shark-mobile@1x.webp 1x, img/portfolio/shark-mobile@2x.webp 2x" media="(max-width: 699px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/shark-tablet@1x.webp 1x, img/portfolio/shark-tablet@2x.webp 2x" media="(min-width: 700px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/shark-desktop@1x.webp 1x, img/portfolio/shark-desktop@2x.webp 2x" media="(min-width: 1143px)" type="image/webp"/>
+                                     <source srcset="img/portfolio/shark-mobile@1x.jpg 1x, img/portfolio/shark-mobile@2x.jpg 2x" media="(max-width: 699px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/shark-tablet@1x.jpg 1x, img/portfolio/shark-tablet@2x.jpg 2x" media="(min-width: 700px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/shark-desktop@1x.jpg 1x, img/portfolio/shark-desktop@2x.jpg 2x" media="(min-width: 1143px)" type="image/jpg"/>
+                                    <img class="card__img" src="img/portfolio/shark-desktop@1x.jpg" alt="shark" />
+                                </picture>
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                            </div>
+                            <h2 class="card__title">Ресторан Seafood</h2>
+                            <button class="card__text">Додаток</button>
+                        </a>
+                    </li>
+                    <li class="card__item">
+                        <a href="#">
+                            <div class="card__wrap">
+                                <picture>
+                                    <source srcset="img/portfolio/headphone-mobile@1x.webp 1x, img/portfolio/headphone-mobile@2x.webp 2x" media="(max-width: 699px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/headphone-tablet@1x.webp 1x, img/portfolio/headphone-tablet@2x.webp 2x" media="(min-width: 700px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/headphone-desktop@1x.webp 1x, img/portfolio/headphone-desktop@2x.webp 2x" media="(min-width: 1143px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/headphone-mobile@1x.jpg 1x, img/portfolio/headphone-mobile@2x.jpg 2x" media="(max-width: 699px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/headphone-tablet@1x.jpg 1x, img/portfolio/headphone-tablet@2x.jpg 2x" media="(min-width: 700px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/headphone-desktop@1x.jpg 1x, img/portfolio/headphone-desktop@2x.jpg 2x" media="(min-width: 1143px)" type="image/jpg"/>
+                                    <img class="card__img" src="img/portfolio/headphone-desktop@1x.jpg" alt="headphone" />
+                                </picture>
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                            </div>
+                            <h2 class="card__title">Проєкт Prime</h2>
+                            <button class="card__text">Маркетинг</button>
+                        </a>
+                    </li>
+                    <li class="card__item">
+                        <a href="#">
+                            <div class="card__wrap">
+                                <picture>
+                                    <source srcset="img/portfolio/box-mobile@1x.webp 1x, img/portfolio/box-mobile@2x.webp 2x" media="(max-width: 699px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/box-tablet@1x.webp 1x, img/portfolio/box-tablet@2x.webp 2x" media="(min-width: 700px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/box-desktop@1x.webp 1x, img/portfolio/box-desktop@2x.webp 2x" media="(min-width: 1143px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/box-mobile@1x.jpg 1x, img/portfolio/box-mobile@2x.jpg 2x" media="(max-width: 699px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/box-tablet@1x.jpg 1x, img/portfolio/box-tablet@2x.jpg 2x" media="(min-width: 700px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/box-desktop@1x.jpg 1x, img/portfolio/box-desktop@2x.jpg 2x" media="(min-width: 1143px)" type="image/jpg"/>
+                                    <img class="card__img" src="img/portfolio/box-desktop@1x.jpg" alt="box, present" />
+                                </picture>
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                            </div>
+                            <h2 class="card__title">Проєкт Boxes</h2>
+                            <button class="card__text">Додаток</button>
+                        </a>
+                    </li>
+                    <li class="card__item">
+                        <a href="#">
+                            <div class="card__wrap">
+                                <picture>
+                                    <source srcset="img/portfolio/monitor-mobile@1x.webp 1x, img/portfolio/monitor-mobile@2x.webp 2x" media="(max-width: 699px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/monitor-tablet@1x.webp 1x, img/portfolio/monitor-tablet@2x.webp 2x" media="(min-width: 700px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/monitor-desktop@1x.webp 1x, img/portfolio/monitor-desktop@2x.webp 2x" media="(min-width: 1143px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/monitor-mobile@1x.jpg 1x, img/portfolio/monitor-mobile@2x.jpg 2x" media="(max-width: 699px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/monitor-tablet@1x.jpg 1x, img/portfolio/monitor-tablet@2x.jpg 2x" media="(min-width: 700px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/monitor-desktop@1x.jpg 1x, img/portfolio/monitor-desktop@2x.jpg 2x" media="(min-width: 1143px)" type="image/jpg"/>
+                                    <img class="card__img" src="img/portfolio/monitor-desktop@1x.jpg" alt="monitor" />
+                                </picture>
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                            </div>
+                            <h2 class="card__title">Inspiration has no Borders</h2>
+                            <button class="card__text">Веб-сайт</button>
+                        </a>
+                    </li>
+                    <li class="card__item">
+                        <a href="#">
+                            <div class="card__wrap">
+                               <picture>
+                                    <source srcset="img/portfolio/book-mobile@1x.webp 1x, img/portfolio/book-mobile@2x.webp 2x" media="(max-width: 699px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/book-tablet@1x.webp 1x, img/portfolio/book-tablet@2x.webp 2x" media="(min-width: 700px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/book-desktop@1x.webp 1x, img/portfolio/book-desktop@2x.webp 2x" media="(min-width: 1143px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/book-mobile@1x.jpg 1x, img/portfolio/book-mobile@2x.jpg 2x" media="(max-width: 699px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/book-tablet@1x.jpg 1x, img/portfolio/book-tablet@2x.jpg 2x" media="(min-width: 700px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/book-desktop@1x.jpg 1x, img/portfolio/book-desktop@2x.jpg 2x" media="(min-width: 1143px)" type="image/jpg"/>
+                                    <img class="card__img" src="img/portfolio/book-desktop@1x.jpg" alt="book" />
+                                </picture>
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                            </div>
+                            <h2 class="card__title">Видання Limited Edition</h2>
+                            <button class="card__text">Дизайн</button>
+                        </a>
+                    </li>
+                    <li class="card__item">
+                        <a href="#">
+                            <div class="card__wrap">
+                                <picture>
+                                    <source srcset="img/portfolio/card-mobile@1x.webp 1x, img/portfolio/card-mobile@2x.webp 2x" media="(max-width: 699px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/card-tablet@1x.webp 1x, img/portfolio/card-tablet@2x.webp 2x" media="(min-width: 700px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/card-desktop@1x.webp 1x, img/portfolio/card-desktop@2x.webp 2x" media="(min-width: 1143px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/card-mobile@1x.jpg 1x, img/portfolio/card-mobile@2x.jpg 2x" media="(max-width: 699px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/card-tablet@1x.jpg 1x, img/portfolio/card-tablet@2x.jpg 2x" media="(min-width: 700px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/card-desktop@1x.jpg 1x, img/portfolio/card-desktop@2x.jpg 2x" media="(min-width: 1143px)" type="image/jpg"/>
+                                    <img class="card__img" src="img/portfolio/card-desktop@1x.jpg" alt="tag" />
+                                </picture>
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                            </div>
+                            <h2 class="card__title">Проєкт LAB</h2>
+                            <button class="card__text">Маркетинг</button>
+                        </a>
+                    </li>
+                    <li class="card__item">
+                        <a href="#">
+                            <div class="card__wrap">
+                                <picture>
+                                    <source srcset="img/portfolio/laptop-mobile@1x.webp 1x, img/portfolio/laptop-mobile@2x.webp 2x" media="(max-width: 699px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/laptop-tablet@1x.webp 1x, img/portfolio/laptop-tablet@2x.webp 2x" media="(min-width: 700px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/laptop-desktop@1x.webp 1x, img/portfolio/laptop-desktop@2x.webp 2x" media="(min-width: 1143px)" type="image/webp"/>
+                                    <source srcset="img/portfolio/laptop-mobile@1x.jpg 1x, img/portfolio/laptop-mobile@2x.jpg 2x" media="(max-width: 699px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/laptop-tablet@1x.jpg 1x, img/portfolio/laptop-tablet@2x.jpg 2x" media="(min-width: 700px)" type="image/jpg"/>
+                                    <source srcset="img/portfolio/laptop-desktop@1x.jpg 1x, img/portfolio/laptop-desktop@2x.jpg 2x" media="(min-width: 1143px)" type="image/jpg"/>
+                                    <img class="card__img" src="img/portfolio/laptop-desktop@1x.jpg" alt="laptop" />
+                                </picture>
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                            </div>
+                            <h2 class="card__title">Growing Business</h2>
+                            <button class="card__text">Додаток</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__box">
+            <div class="footer__wrap">
+                <div class="footer__logo-wrapper">
+                    <a href="index.html" class="footer__logo"><span class="footer__logo__blue">Web</span>Studio</a>
+                </div>
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__adress">м. Київ, пр-т Лесі Українки, 26</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__email">info@devstudio.com</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a href="#" class="footer-list__phone">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__social-net">
+                <h3 class="footer__title">Приєднуйтесь</h3>
+                <div class="footer__wrap-list">
+                    <ul class="footer__social-net-list">
+                        <li class="footer__item">
+                            <a class="footer__sn-border">
+                                <svg class="footer__icon" width="20" height="20">
+                                    <use href="img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__sn-border">
+                                <svg class="footer__icon" width="20" height="20">
+                                    <use href="img/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__sn-border">
+                                <svg class="footer__icon" width="20" height="20">
+                                    <use href="img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__sn-border">
+                                <svg class="footer__icon" width="20" height="20">
+                                    <use href="img/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-form__box">
+                <form class="footer-form">
+                    <h3 class="footer-form__title">Підпишіться на розсилку</h3>
+                    <div class="footer-form__label-box">
+                        <label for="email">
+                            <input class="footer-form__input" type="email" placeholder="E-mail" required
+                                pattern="[A-Za-z]{6,}">
+                        </label>
+                        <button class="footer-form__subscribe-btn" type="submit">Підписатися
+                            <svg class="footer-form__icon-telegram" width="24px" height="24px">
+                                <use href="img/symbol-defs-modal.svg#icon-telegram"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="mobile-menu__icon-close" width="40" height="40">
+                <use href="img/symbol-defs-menu.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <ul class="mobile__list">
+            <li class="mobile__item">
+                <a href="index.html" class="mobile__link">Студія</a>
+            </li>
+            <li class="mobile__item">
+                <a href="portfolio.html" class="mobile__link mobile__link--active">Портфоліо</a>
+            </li>
+            <li class="mobile__item">
+                <a href="#" class="mobile__link">Контакти</a>
+            </li>
+        </ul>
+        <div class="mobile__info-wrap">
+            <ul class="mobile__contacts-list">
+                <li class="mobile__contacts-item">
+                    <a class="mobile__contacts-info" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile__contacts-item">
+                    <a class="mobile__contacts-info mobile__contacts-info--email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+
+            <ul class="mobile__nets-list">
+                <li class="mobile__nets-item">
+                    <a href="#" class="mobile__nets-link">Instagram</a>
+                </li>
+                <li class="mobile__nets-item">
+                    <a href="#" class="mobile__nets-link">Twitter</a>
+                </li>
+                <li class="mobile__nets-item">
+                    <a href="#" class="mobile__nets-link">Facebook</a>
+                </li>
+                <li class="mobile__nets-item">
+                    <a href="#" class="mobile__nets-link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>
